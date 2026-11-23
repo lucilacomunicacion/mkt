@@ -3009,3 +3009,33 @@ border: 1px solid var(--sage);
     width: min(100%, 270px);
   }
 }
+/* DISTRIBUCIÓN DEL MENÚ SUPERIOR EN PC */
+@media (min-width: 961px) {
+
+  .site-header .nav-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .site-header .brand {
+    margin-right: 0;
+    flex-shrink: 0;
+  }
+
+  .site-header .site-nav {
+    display: flex;
+    flex: 1 1 auto;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 0;
+    margin-left: 2.5rem !important;
+    margin-right: 2rem !important;
+    gap: 1rem;
+  }
+
+  .site-header .nav-cta {
+    flex-shrink: 0;
+  }
+
+}
